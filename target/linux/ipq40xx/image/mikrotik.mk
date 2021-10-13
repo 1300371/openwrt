@@ -35,7 +35,7 @@ define Device/mikrotik_hap-ac3
 	BLOCKSIZE := 128k
 	PAGESIZE := 2048
 	KERNEL_UBIFS_OPTS = -m $$(PAGESIZE) -e 124KiB -c $$(PAGESIZE) -x none
-	DEVICE_PACKAGES := kmod-ledtrig-gpio ipq-wifi-mikrotik_hap-ac3
+	DEVICE_PACKAGES := kmod-ledtrig-gpio
 endef
 TARGET_DEVICES += mikrotik_hap-ac3
 
