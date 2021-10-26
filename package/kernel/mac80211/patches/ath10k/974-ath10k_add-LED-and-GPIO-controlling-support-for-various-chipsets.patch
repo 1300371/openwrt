@@ -172,7 +172,7 @@ v13:
  		.patch_load_addr = QCA9888_HW_2_0_PATCH_LOAD_ADDR,
  		.uart_pin = 7,
  		.cc_wraparound_type = ATH10K_HW_CC_WRAP_SHIFTED_EACH,
-@@ -3060,6 +3066,10 @@ int ath10k_core_start(struct ath10k *ar,
+@@ -3068,6 +3074,10 @@ int ath10k_core_start(struct ath10k *ar,
  		goto err_hif_stop;
  	}
  
@@ -183,7 +183,7 @@ v13:
  	return 0;
  
  err_hif_stop:
-@@ -3318,9 +3328,18 @@ static void ath10k_core_register_work(st
+@@ -3326,9 +3336,18 @@ static void ath10k_core_register_work(st
  		goto err_spectral_destroy;
  	}
  
@@ -202,7 +202,7 @@ v13:
  err_spectral_destroy:
  	ath10k_spectral_destroy(ar);
  err_debug_destroy:
-@@ -3366,6 +3385,8 @@ void ath10k_core_unregister(struct ath10
+@@ -3374,6 +3393,8 @@ void ath10k_core_unregister(struct ath10
  	if (!test_bit(ATH10K_FLAG_CORE_REGISTERED, &ar->dev_flags))
  		return;
  
