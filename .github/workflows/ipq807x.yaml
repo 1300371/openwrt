@@ -29,6 +29,28 @@ jobs:
                 echo "CONFIG_PACKAGE_qca-ssdk-shell=y\n" >> .config
                 echo "CONFIG_PACKAGE_wpad-basic-wolfssl=m\n" >> .config
                 echo "CONFIG_PACKAGE_wpad-wolfssl=y\n" >> .config
+                echo "CONFIG_PACKAGE_libatomic=y\n" >> .config
+                echo "CONFIG_PACKAGE_librt=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-qca-nss-drv=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-conntrac=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-conntrac-netlink=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-conntrack6=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-flow=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-ipt=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-ipt6=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-nat=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-reject=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nf-reject6=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nfnetlink=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-ipt-ipset=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nft-netdev=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-nft-bridge=y\n" >> .config
+                echo "CONFIG_PACKAGE_libxtables12=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-sched-core=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-sched-cake=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-ifb=y\n" >> .config
+                echo "CONFIG_PACKAGE_iptables=y\n" >> .config
+                echo "CONFIG_PACKAGE_iptables-mod-ipopt=y\n" >> .config
                 make defconfig
 
             - name: Download package sources
