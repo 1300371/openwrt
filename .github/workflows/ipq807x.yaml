@@ -48,9 +48,11 @@ jobs:
                 echo "CONFIG_PACKAGE_libxtables12=y\n" >> .config
                 echo "CONFIG_PACKAGE_kmod-sched-core=y\n" >> .config
                 echo "CONFIG_PACKAGE_kmod-sched-cake=y\n" >> .config
+                echo "CONFIG_PACKAGE_kmod-sched-connmark=y\n" >> .config
                 echo "CONFIG_PACKAGE_kmod-ifb=y\n" >> .config
                 echo "CONFIG_PACKAGE_iptables=y\n" >> .config
                 echo "CONFIG_PACKAGE_iptables-mod-ipopt=y\n" >> .config
+                echo "CONFIG_PACKAGE_iptables-mod-conntrack-extra=y\n" >> .config
                 make defconfig
 
             - name: Download package sources
